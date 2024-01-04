@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Compression</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+    <body 
+    <div class="background"></div>
+  <h1>Video Compression</h1>
+  
+  <input type="file" id="videoInput">
+  <label for="outputSize">Output Size:</label>
+  <select id="outputSize">
+    <option value="320">320p</option>
+    <option value="480">480p</option>
+    <option value="720">720p</option>
+  </select>
+  
+  <label for="outputQuality">Output Quality:</label>
+  <select id="outputQuality">
+    <option value="0.5">Low</option>
+    <option value="0.7" selected>Medium</option>
+    <option value="0.9">High</option>
+  </select>
+  
+  <button onclick="compressVideo()">Compress</button>
+  <button onclick="decompressVideo()">Decompress</button>
+  
+  <video id="videoOutput" controls></video>
+
+  <script src="script.js"></script>
+</body>
+</html>
